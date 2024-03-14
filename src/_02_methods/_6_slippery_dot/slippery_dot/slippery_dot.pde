@@ -17,7 +17,7 @@
       background(#D8D8D8);
       // 4. Draw an ellipse using the variables created at the top of the sketch for the location and size of your ellipse. 
       //    Make sure it fits in the window. Change the variables if it does not.
-    ellipse(x,y,size,size);
+     ellipse(x,y,size,size);
     }
     
     /******** This method gets called automatically when you press the mouse ************/
@@ -27,7 +27,13 @@
       //6. The getDistanceFromMouse() method below returns a number.
       //   Set the value of your distance variable to the value returned by the getDistance method
       //   You will need to pass the x and y location of your ellipse to this method.
-        
+        x += 1;
+        y += 1;
+       if (distance<size){
+         x = int(random(width));
+         y = int(random(height));
+
+       }
           
       //7.  Use an if statement to check if your distance variable is < the radius of the ellipse
       //    If it is, make a new x AND y for the ellipse, for a new random location on the window
