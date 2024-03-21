@@ -12,7 +12,7 @@ public class RollerCoaster {
 		String heightToRide=JOptionPane.showInputDialog("Enter your height in inches.");
 		int heightAsInt = Integer.parseInt(heightToRide);
 		// Uncomment the line below...
-			if( heightAsInt > 42 ) { 
+			if( heightAsInt > 48 ) { 
 				JOptionPane.showMessageDialog(null, "You are tall enough to ride the coaster alone!");
 			}
 		
