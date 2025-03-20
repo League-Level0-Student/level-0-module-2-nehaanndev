@@ -7,8 +7,10 @@ import java.util.Random;
 
 public class IntroToRandom {
 	public static void main(String[] args) {
-		
-		int number = 0;
+		Random ran = new Random();
+		int randomNum = ran.nextInt(11) + 10 ;
+		System.out.println(randomNum);
+		/* int number = 0;
 		
 		// Before you can make random numbers, you need a Random object. Random objects make random things.
 		// Random objects are created like this.
@@ -17,7 +19,7 @@ public class IntroToRandom {
 		/*************  Random integers with no bounds  *************/
 		
 		// Run this program and you will see that nextInt created 5 random integers which have been printed to the console
-		for (int i=0; i<5; i++) {
+		 /* for (int i=0; i<5; i++) {
 			number = ran.nextInt();
 			System.out.println(number);
 		}
@@ -27,7 +29,7 @@ public class IntroToRandom {
 		/*************  Random positive integers with an upper limit only  *************/
 		
 		// Usually we want to limit the numbers to a range in our program. 		
-		for (int i=0; i<5; i++) {
+	/*	for (int i=0; i<5; i++) {
 			// Uncomment the line of code below, but replace the _____ with a positive integer (e.g. 100) before running the program			
 
 			 number = ran.nextInt(100);
@@ -44,7 +46,7 @@ public class IntroToRandom {
 		// But what if you don't want the range to start at 0?  Let's say we want numbers between 25 and 75 inclusive.
 		// In this case, 25 is the lowest value we want, and 75 is the highest value. See below how to do this:
 		
-		for (int i=0; i<5; i++) {
+	/*	for (int i=0; i<5; i++) {
 			// Uncomment the line of code below, and replace (_____)  with   (highest value - lowest value + 1)
 			// For our example, this will be:  ( 75 - 25 + 1 )
 			// Also replace <lowest value> with the start of the range.  For our example, this is 25.
@@ -59,12 +61,13 @@ public class IntroToRandom {
 		/*************  Random integers with an upper and lower (negative) limit  *************/
 		
 		// Using the above example, generate 5 random numbers between -222 and 88
-		for (int i=0; i<5; i++) {
+	/*	for (int i=0; i<5; i++) {
 		
 			number = ran.nextInt(88- (-222) +1) + -222;
 			System.out.println(number);
 			
 		}
-
+		
+		*/
 	}
 }
